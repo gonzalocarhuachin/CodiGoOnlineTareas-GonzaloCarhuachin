@@ -1,0 +1,6 @@
+crear un repositorio codigoonline-gonzalocarhuachin 
+archivos:
+  index.html(nombre de usuario) 1er commit
+  carpeta librerias:
+	bootstrap.html(lorem ipsum)un fragmento --- 2do commit
+  carpeta build(carpeta vacia) debe subirse a github
