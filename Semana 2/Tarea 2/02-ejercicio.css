@@ -1,0 +1,138 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #E8E7E7;
+    height: 100vh;
+}
+
+/* CARD */
+
+#contenedor
+{
+    width: 500px;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#imagen-wraper
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+#circulo
+{
+    border-radius: 50%;
+}
+
+#info-wraper
+{
+    height: 50%;
+    width: 500px;
+    position: absolute;
+    bottom: 0;
+}
+
+p:not(#titulo-nav)
+{
+    text-align: center;
+    padding: 10px;
+}
+
+#nombre
+{
+    margin-top: 25px;
+    font-family: 'Manrope', sans-serif;
+    color: #2B78C2;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#profesion
+{
+    font-size: 15px;
+    font-family: 'Manrope', sans-serif;
+    color: #737486;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#logos
+{
+    margin-top: 25px;
+    text-align: center;
+}
+
+img:not(#circulo)
+{
+    height: 25px;
+    width: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* ASIDE */
+
+aside
+{
+    background-color: #3B3532;
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#titulo-nav
+{
+    color: #D1CFC3;
+    text-align: center;
+    padding: 30px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+span
+{
+    color: #E1DDDB;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+ul
+{
+    padding-top: 30px;
+    padding-left: 0;
+}
+
+li
+{
+    color: #DBDAD0;
+    padding-left: -12px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+}
+
+li:hover
+{
+    color: #FAF4E5;
+    background-color: #423D3B;
+    border-right: 5px solid #be4d02;
+}
