@@ -80,6 +80,11 @@ body
     align-items: center;
 }
 
+.header-logo-search button
+{
+    display: none;
+}
+
 .header-logo-search-img
 {
     display: inline-block;
@@ -653,6 +658,11 @@ main
         flex-direction: column;
     }
 
+    .header-logo-search button
+    {
+        display: none;
+    }
+
     .nav-bar
     {
         margin-left: 0;
@@ -739,18 +749,44 @@ main
     }
 }
 
-@media screen and (max-width: 425px)
+@media screen and (max-width: 480px)
 {
+    .cabecera
+    {
+        height: 200px;
+    }
+
     .header-login
     {
         flex-direction: column;
-        height: 300px;
+        height: 50px;
+        padding-bottom: 5px;
     }
 
     .header-login-info
     {
         margin-left: 0;
         margin-right: 0;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-login-info-izq
+    {
+        padding-left: 30%;
+        display: none;
+    }
+
+    .header-login-info-der a p
+    {
+        display: block;
+        text-align: center;
+    }
+
+    .small-none
+    {
+        display: none;
     }
 
     .header-logo-search
@@ -759,22 +795,97 @@ main
         margin-right: 0;
     }
 
+    .header-logo-search button
+    {
+        display: block;
+    }
+
+    .busqueda
+    {
+        float: right;
+        position: absolute;
+        right: 0;
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    .menu
+    {
+        margin-top: 20px;
+        float: left;
+        position: absolute;
+        left: 0;
+        background-color: darkred;
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .header-logo-search-img
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-logo-search-img img
+    {
+        height: 60%;
+        width: 30%;
+        margin-left: 40%;
+    }
+
+    .header-logo-search-img h1
+    {
+        padding-left: 30px;
+    }
+
+    .header-logo-search-barra
+    {
+        display: none;
+    }
+
     .nav-bar
     {
         margin-left: 0;
         margin-right: 0;
+        display: none;
     }
 
     .main-destacados
     {
-        margin-left: 0;
-        margin-right: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-destacados-principal
+    {
+        width: 100%;
+    }
+
+    .main-destacados-secundarios
+    {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        width: 100%;
+        justify-content: start;
+    }
+
+    .main-destacados-secundarios a img
+    {
+        height: 200px;
     }
 
     .main-populares
     {
         margin-left: 0;
         margin-right: 0;
+        margin-top: 220px;
     }
 
     .main-populares-contenido
@@ -791,25 +902,54 @@ main
         margin-right: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+    }
+
+    .main-categoria-titulo
+    {
+        margin-left: 0;
+        margin-right: 0;
+        width: 463px;
+        height: 250px;
     }
 
     .main-categoria-titulo a img
     {
         margin-left: 0;
         margin-right: 0;
+        width: 463px;
+        height: 250px;
     }
 
     .main-anuncios
     {
         margin-left: 0;
         margin-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-anuncios-img-min
+    {
+        margin-left: 20%;
+        margin-right: 20%;
+        align-self: center;
+        width: 300px;
+    }
+
+    .main-anuncios-img
+    {
+        margin-top: 10px;
+        align-self: center;
+        width: 100%;
     }
 
     .main-descripcion
     {
         margin-left: 0;
         margin-right: 0;
+        margin-top: 190px;
+        display: flex;
+        flex-direction: column;
     }
 
     .main-descripcion-facebook
@@ -817,21 +957,60 @@ main
         display: none;
     }
 
+    .main-descripcion-servicios
+    {
+        width: 100%;
+    }
+
+    .main-descripcion-nosotros
+    {
+        width: 100%;
+    }
+
     .main-dire-tel
     {
         margin-left: 0;
         margin-right: 0;
+        display: none;
+    }
+
+    .pie-de-pagina
+    {
+        margin-top: 105px;
+        height: 800px;    
     }
 
     .footer-redes-caja
     {
         margin-left: 0;
         margin-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-informacion-caja
+    {
+        display: flex;
+        flex-direction: column;
     }
 
     .footer-informacion-caja
     {
         margin-left: 0;
         margin-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-informacion-caja-cuenta, .footer-informacion-caja-infotienda
+    {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .footer-informacion-caja-infotienda
+    {
+        margin-bottom: 120px;
+        margin-top: 0;
     }
 }
