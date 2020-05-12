@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="body">
+    <main class="main">
+        <form id="datos">
+        <h2 class="main__titulo">Factura</h2>
+        <div class="main__datos">
+            <div class="main__datos1">
+                <span>Nombre:</span>
+                <input type="text" class="main__input" id="nombre">
+                <span>Fecha:</span>
+                <input type="date" class="main__input" id="fecha">
+            </div>
+            <div class="main__datos2">
+                <span>RUC:</span>
+                <input type="number" class="main__input" id="ruc">
+                <span>Nro:</span>
+                <input type="number" class="main__input" id="nro">
+            </div>
+        </div>
+        <div class="main__ingresar__producto">
+            <span>Cantidad:</span>
+            <input type="number" class="main__input__producto" id="inputCantidad">
+            <span>Descripción:</span>
+            <input type="text" class="main__input__producto" id="descripcion">
+            <span>P.unit:</span>
+            <input type="number" class="main__input__producto" id="inputPUnit">
+            <span>P.total:</span>
+            <span id="inputPtotal"></span>
+            <button class="main__ingresar" id="ingresarProducto">Ingresar</button>
+        </div>
+        <div class="main__productos">
+            <div class="main__productos__cabecera">
+                <span class="productos__cabecera cantidad">Cant.</span>
+                <span class="productos__cabecera descripcion">Descripción</span>
+                <span class="productos__cabecera p_unit">P.Unit</span>
+                <span class="productos__cabecera p_total">P.Total</span>
+            </div>
+            <ul class="main__productos__lista" id="listaProductos">
+                <!-- <li class="main__item">
+                    <span class="cantidad">1</span>
+                    <span class="descripcion">MacBook</span>
+                    <span class="p_unit">10.000</span>
+                    <span class="p_total">10.000</span>
+                </li> -->
+            </ul>
+        </div>
+        <div class="main__total">
+            <h4 class="main__precio__total">Total:</h4>
+            <span class="main__resultado" id="total"></span>
+        </div>
+        <button class="main__guardar__factura" id="guardarTodo" type="submit">Guardar Todo</button>
+    </form>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
