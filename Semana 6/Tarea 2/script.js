@@ -1,0 +1,2 @@
+//Inicializacion
+M.AutoInit();
